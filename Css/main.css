@@ -1,0 +1,82 @@
+*{margin:0;padding: 0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+body{background-color: #ecf1dd;}
+li{color: whitesmoke;transition: .5s;list-style: none;}
+li:hover{opacity:.5;cursor: pointer;}
+nav{position:absolute;background-color: #3e070a;width: 100%;height: 2.8%;color:whitesmoke;}
+#timeArea{position: absolute;right: 67%;}
+#timeArea + p:hover{cursor: pointer;}
+nav > p{position: absolute;right: 30%;}
+header{position:absolute;background-color: #7d0d11;width: 100%;height: 12%;top: 2.8%;}
+button{border: none;color: white;cursor: pointer;padding: 1%;background-image: linear-gradient(#7d0d11,#3e070a);
+  border-radius: 20%;box-shadow: -1px -1px whitesmoke;}
+#Logo{color:whitesmoke;position: absolute;right: 60.5%;top: 15%;}
+#searchArea{position:absolute;background-color: #3e070a;padding: 5%;right: 22.5%;top: 15%;width: 17%; padding:2.2%;opacity: .8;}
+#sBar{position:absolute;background-color: #ecf1dd;border-radius: 20%;top:5%;left: 5%;padding: 1.5%;width: 90%;margin-top: 2%;}
+#minList{position:absolute;display: inline-block;width: 100%;height: auto;left: 5%;margin-top: 2%;} /* List kapsayıcı */
+#listArea > span{color:#8d3222;margin-right:0.1%;}
+#listArea > a{transition: .5s;margin-right:1%;cursor:pointer;color:white;}
+#listArea > a:hover{opacity: .5;}
+#cont{width:100%;height:65px;display:flex;position:absolute;top:11%;}
+#box1{width:20%;border-radius:50%;background-color: transparent;}
+#menu{width:60%;background-color: #7d0d11;border-bottom-left-radius:5%;border-bottom-right-radius:5%;margin-top: 20px;}
+#mList{position: absolute;top:55%;width: 80%;}
+#mList > span{color:#8d3222;margin-right:0.1%;}
+#mList > a{transition: .5s;margin-right:1%;cursor:pointer;color:white;}
+#mList > a:hover{opacity: .5;}
+#box2{width:20%;border-radius:50%;background-color: transparent;}
+#section1{position: absolute;display:flex;width: 60%;height: 40%;background-image: linear-gradient(white,#ecf1dd);border-radius: 5%;
+	 top: 22%;right: 20%;}
+#imgBox{position:relative;margin-left:3%;width: 514.56px;height: 300px;top:10px;}
+#imgBox > img{position:absolute;width: 514.56px;height: 300px;}
+#imgBox:hover .overlay {opacity: 1;}
+.overlay {position: absolute; bottom: 0;background: rgba(62, 7, 10, 0.5); /* Black see-through */
+  color: #3e070a;width: 100%;color:white;transition: .5s ease;opacity:0;
+  padding: 10px;display: inline-block;}
+.overlay > p:first-child {font-size:15px;float:left;}
+#ovrBtn{float: right;margin-top: 1%;}
+.overItems{font-size:13px;float:left;color:white;text-decoration:none;}
+#area2{width: 33%;margin: 2% 0 0 2%;} #area2 > h3{margin-right: 2%;}
+#me{color:darkred;}
+#here{padding: 1%;width: 330px;height: 100%;margin-right: 1%;background-color: #ecf1dd;}
+#here > span{color:darkred;}
+#here > a{width: 100%;color:black;border-top-left-radius: 20%;border-top-right-radius: 20%;margin: 0 1% 5%;padding: 3%;}
+#here > a > span{color:red;}
+#here > a:hover{opacity:.5;cursor: pointer;}
+#lonelyH{position: absolute;top: 70%;left: 21%;} #lonelyH > span{color:darkred;}
+#section2{position: absolute;display:flex;width: 39%;height: 40%;background-color: #b8bc9c;border-radius: 5%;
+	 top: 74%;left: 21%;}
+#video{margin: 4% 1% 2.5% 1%;} #video > video{border-radius: 5%;width: 100%;height: 250px;}
+#area3{display:inline-block;width: 400px;height: 280px; margin: 1% 2% 1% 1%;border-radius: 5%;}
+#box{display:flex;background-color: #c0c4a3; width: 97%; height: 23%;margin:1%;}
+#box > img{width: 100px;height: auto;}
+#section3{position: absolute;color:white;width: 19%;height: 40%;
+  background-image: linear-gradient(red,#7d0d11,#3e070a);border-radius: 5%;
+	 top: 74%;right: 20%;box-shadow: -2px -2px whitesmoke;} /* Section 3 */
+#section3 h3{color:white;width: 100%;background-image: linear-gradient(red,#7d0d11);border-radius: 5%;
+  width:90%;margin:5% auto;height: 10%;padding: 1%;box-shadow: -1px -1px whitesmoke;}   
+#section3 p{padding: 3%;margin:1% 1% 0;}
+#section3 ul{padding: 5%;margin-left: 5%;}
+#here1 > span{cursor:pointer;color: #7d0d11;transition: .5s;} #here1 > span:hover{opacity:.5;color:silver;}
+#vote,#result{margin-top: 17%;margin-right:5%;width: 30%;}
+#section4{position: absolute;display:flex;justify-content: space-around;width: 60%;height: 45%;top: 117%;right: 20%;}
+.card{display: inline-block;width: 30%; height: auto; background: white; border-radius: 5%;padding:1%;margin: 1% 0;}
+.cardHead{position: relative;height: auto;} .cardImg{width: 100%; border-radius: 5%;height: 140px;}
+.cardBody{background-color: #ecf1dd;padding: 1%;height: 50%;}
+.cardBody > button{float: right;width: 30%;margin:7% 5% 3% 0;}
+.cardBody > strong{cursor: pointer;}
+.cardOver{position:absolute;bottom: 2%;left:0;background: #7d0d11;color: #3e070a;width: 100%;color:white;transition: .5s ease;
+  opacity:0;padding: 10px;display: inline-block;border-radius: 5%;}
+.card:hover .cardOver{opacity: 1;}
+#cont1{width:100%;height:65px;display:flex;position:absolute;top: 165%;}
+#box3{width:20%;border-radius:50%;background-color: #ecf1dd;}
+#menu1{width:60%;background-color: #7d0d11;border-top-left-radius:5%;border-top-right-radius:5%;margin-bottom: 20px;}
+#mList1{position: absolute;width: 80%;margin-top: 1%;}
+#mList1 > span{color:#8d3222;margin-right:0.1%;}
+#mList1 > a{transition: .5s;margin-right:1%;cursor:pointer;color:white;}
+#mList1 > a:hover{opacity: .5;}
+#box4{width:20%;border-radius:50%;background-color: #ecf1dd;}
+footer{position:absolute;background-color: #7d0d11;width: 100%;height: 12%;top: 171%;}
+#copyRight{position:absolute;top:176%;width: 100%; height: 7%; background-color:#3e070a;color:white; display: flex;}
+#copyRight > h3{text-transform: uppercase;display:inline-block;margin:1% 0 0 35%;width: 100%;}
+#copyRight > p{display: inline-block;margin: 1% 32% 0 1%; width: 100%;}
+#copyRight > span{margin-right: 2%;}

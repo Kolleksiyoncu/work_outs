@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html lang="en" Content-Type="text/html">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name = "viewport" content = "user-scalable=no, width=device-width">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="stylesheet" Content-Type="text/css" href="./Css/main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<title>PSD Project</title>
+</head>
+<body>
+<nav>
+  <p id="timeArea">
+   <script>
+	let today = new Date().toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"});
+	document.querySelector("#timeArea").innerText=today;
+   </script>
+  </p>	
+  <p>Login  |  Our Blog</p>
+</nav>
+<header>
+	<h1 id="Logo">Entertainment Live</h1>
+	<div id="searchArea">
+		<input type="search" id="sBar" placeholder="Search Keyword"title="search"></input>
+		<div id="minList">
+		 <ul id="listArea">
+			<script>
+				let list=["Entertainments","videos","images"],i=0,result="";
+				while(i<list.length){ // css ile nasıl Aşağıya indirileceği bulununca
+					//"<span>&#9864;</span><a style='margin-right:1%;cursor:pointer;color:white;'>"+list[i]+"</a>";
+					result+="<span>&#9864;</span><a>"+list[i]+"</a>";
+					i++}
+					document.querySelector("#listArea").innerHTML=result;
+			</script>
+		 </ul>
+		</div>
+	</div>
+</header>
+<div id="cont">
+	<div id="box1"></div>
+	<div id="menu">
+		<ul id="mList">
+			<script>
+				var menu =["Movies","Music","Download","On-Demond","Export Advice","Community","StarSpeak","Offers & Promos","Take a Break"],k=0,nvc="";
+				while(k<menu.length){
+					nvc+="<span>&#9864;</span><a>"+menu[k]+"</a>";
+					k++}
+					document.querySelector("#mList").innerHTML=nvc;
+			</script>
+		</ul>
+	</div>
+	<div id="box2"></div>
+</div>
+<div id="section1">
+	<div id="imgBox">
+		<script>
+			let img=[
+				"https://images.pexels.com/photos/4834142/pexels-photo-4834142.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+				"https://images.pexels.com/photos/2769753/pexels-photo-2769753.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+				"https://images.pexels.com/photos/3851790/pexels-photo-3851790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+				"https://images.pexels.com/photos/1036804/pexels-photo-1036804.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+				"https://images.pexels.com/photos/6146961/pexels-photo-6146961.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+				"https://images.pexels.com/photos/5384621/pexels-photo-5384621.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"],
+			ff=0,jon="";
+			while(ff<img.length){
+				jon+="<img src='"+img[ff]+"'>"
+				ff++}
+				document.querySelector("#imgBox").innerHTML=jon;
+		</script>
+		<div class="overlay">
+		  <p>Make your mobile most happening destination with <b>Entertainment Live!</b></p>
+		  <p class="overItems">We bring you the latest in entertainment & information services, rigth on your mobile.</p>
+		  <p class="overItems">From the latest of Bollywood to the futuristic aplications. <b><a href="#"style="color:white;text-decoration:none;">get it all here!</a></b></p>
+	      <button id="ovrBtn">Read more</button>
+        </div>
+	</div>
+	<div id="area2">
+		<h3><b>Latest <span id="me">Articles</span></b></h3>
+		<ul id="here">
+			<script>
+				let area2=[
+					"News Headline Dummy Text - <span>Lifestyle tips</span>",
+					"We re bring you the latest in","Entertainmet & Information services",
+					"Rigth on your phone","We re bring you the latest in","Entertainmet & Information services","Rigth on your phone"],
+				cc=0,jorah="";
+				while(cc<area2.length){
+					jorah+="<span>&#9864;</span><a>"+area2[cc]+"</a><br>";
+					cc++}
+					document.querySelector("#here").innerHTML=jorah;
+			</script>
+		</ul>
+	</div>
+</div>
+<h3 id="lonelyH"><b>Latest <span>Videos</span></b></h3>
+<div id="section2">
+	<div id="video">
+		<video poster="https://images.pexels.com/photos/25758/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" controls>
+ 		</video>
+	</div>
+	<div id="area3">
+		<script>
+			let heads=["R.I.P Petrol Heads","String Master","Nautical Style","R.I.P Petrol Heads"],
+			photos=["https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+				"https://images.pexels.com/photos/167523/pexels-photo-167523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+				"https://images.pexels.com/photos/14709648/pexels-photo-14709648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+				"https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"],
+			post=["Meet wonderfull car concept.","Electric Gamesha Land.","For that lazy afternoon on the yacht.","Meet wonderfull car concept."];
+			vv=0,Arya="";
+			while(vv<4){
+				Arya+="<div id='box'><img src='"+photos[vv]+"'><div><h4>"+heads[vv]+"</h4><p>"+post[vv]+"</p></div></div>";
+				vv++}
+				document.querySelector("#area3").innerHTML=Arya;
+		</script>
+	</div>
+</div>
+<div id="section3">
+	<h3>Latest Poll</h3>
+	<p>What is your favourite game of music?</p>
+	<ul id="here1">
+		<script>
+			let choise=["Pop","R&B","Rock","Classical","Other"],dd=0,cercei="";
+			while(dd<choise.length){
+				cercei+="<span>&#9864;</span>"+choise[dd]+"</br>"
+				dd++}
+				document.querySelector("#here1").innerHTML=cercei;
+		</script>
+		<button id="vote">Vote</button>
+		<button id="result">Result</button>
+	</ul>
+</div>
+<div id="section4">
+	<script> 
+		let arrImg=[
+			"https://images.pexels.com/photos/1309240/pexels-photo-1309240.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+			"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA17kxvq.img?w=1920&h=1080&q=60&m=2&f=jpg",
+			"https://i.hizliresim.com/rLq5vB.jpg"],
+			arrText=["We bring you the latest in entertainment & information services, rigth on your mobile.From the latest of Bollywood to the futuristic aplications.",
+				"get it all here !!","View All"],overlay=["ringtone","wallpaper","games"],
+		kk=0,davos="";
+		while(kk<3){
+			davos+="<div class='card'><div class='cardHead'><img class='cardImg'src='"+arrImg[kk]+"'><div class='cardOver'><h3 style='text-transform: uppercase;'>"+overlay[kk]+"</h3></div></div><div class='cardBody'><p>"+arrText[0]+"</p><strong>"+arrText[1]+"</strong><button>"+arrText[2]+"</button></div></div>";
+			kk++}
+		document.querySelector("#section4").innerHTML=davos;
+	</script>
+</div>
+<div id="cont1">
+	<div id="box3"></div>
+	<div id="menu1">
+		<ul id="mList1">
+		<script>
+			let sansa="",ss=0;
+			while(ss<menu.length){
+				sansa+="<span>&#9864;</span><a>"+menu[ss]+"</a>";
+				ss++}
+				document.querySelector("#mList1").innerHTML=sansa;
+		</script>
+		</ul>
+	</div>
+	<div id="box4"></div>
+</div>
+<footer></footer>
+	<div id="copyRight">
+		<h3>Entertainment Live</h3>
+		<p><span>&#169;</span>Copyright 2009 PSDFreebies.com</p>
+	</div>
+</body>
+</html>
